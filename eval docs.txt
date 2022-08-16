@@ -1,0 +1,54 @@
+Difference between CentOS and debian
+CentOS is largely supported by Red Hat Enterprise. it is enterprice class, that means it is usually used for server building.
+Debian is a Unix like OS. it is supported by volunteers under the Debian project.
+
+Aptitude is a high level package manager while APT is a lower level package manager. While apt lacks UI, Aptitude has a text-only and interactive UI
+
+AppArmor is a Linux application security system. it protects the OS and apps from external and internal threats.
+
+create new user : sudo adduser <username>
+
+check ufw : systemctl status ufw
+
+check ssh : systemctl status ssh
+
+check distro : uname -a
+
+create new group : sudo addgroup <groupname>
+add user to group : sudp adduser <username> <groupname>
+check added user into group : getent group <groupname>
+
+check user : getent passwd <username>
+
+change hostname : sudo nano etc/hostname
+
+check partition : lsblk
+
+LVM aka logical volume management is allows users to manage the disk size easily. it also allows the collection of multiple hard drive into a single volume group.
+
+check sudo : systemctl status sudo
+
+check sudo log : cat /vat/log/sudo/sudo.log
+
+check ufw port : sudo ufw status
+
+ufw allow : sudo ufw allow <port>
+ufw deny : sudo ufw delete <port (numbered)>
+
+ssh login in cmd : ssh <id>42@127.0.0.1 -p 4242
+
+cron is a job scheduler. Users use cron to set up nad maintain software environement to schedule jobs
+
+cron: sudo crontab -u root -e
+
+check monitoring script: sudo nano /usr/local/bin/monitoring.sh
+
+smtp:
+echo "This is the body of the email" | mail -s "This is the subject line" <email>
+
+
+
+
+
+
+
